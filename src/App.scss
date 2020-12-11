@@ -1,0 +1,40 @@
+ul.list-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  li.list-item {
+    display: inline-block;
+    width: calc(100% / 3);
+    span {
+      display: block;
+    }
+    & > div {
+      margin: 20px;
+      border: 1px solid #f2f2f2;
+      -webkit-box-shadow: 0 4px 20px rgba(0,0,0,.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,.1);
+      border-radius: 8px;
+      .list-content {
+        padding: 15px;
+      }
+    }
+    .sub-sections {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      a {
+        display: inline-block;
+        min-width: calc(100% / 2);
+      }
+    }
+    .list-footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      a {
+        display: inline-block;
+        min-width: calc(100% / 2);
+      }
+    }
+  }
+}
