@@ -16,6 +16,7 @@ let m ={
 		modules: [
 			{
 				id: 'symbl-sdk',
+				icon: 'codepen',
 				parent: null,
 				name: 'Symbl SDK (Node.js)',
 				beta: false,
@@ -33,6 +34,7 @@ let m ={
 				]
 			}, {
 				id: 'telephony',
+				icon: 'phone',
 				parent: null,
 				name: 'Real Time Telephony API',
 				beta: false,
@@ -50,6 +52,7 @@ let m ={
 				]
 			}, {
 				id: 'web-socket',
+				icon: 'plug',
 				parent: null,
 				name: 'Websocket',
 				beta: false,
@@ -67,6 +70,7 @@ let m ={
 				]
 			}, {
 				id: 'async',
+				icon: 'refresh',
 				parent: null,
 				name: 'Async API',
 				beta: false,
@@ -84,6 +88,7 @@ let m ={
 				]
 			}, {
 				id: 'conversation',
+				icon: 'comments',
 				parent: null,
 				name: 'Conversation API',
 				beta: false,
@@ -101,8 +106,43 @@ let m ={
 				]
 			}, {
 				id: 'experience',
+				icon: 'suitcase',
 				parent: null,
 				name: 'Experience API',
+				beta: false,
+				sections: [
+					{
+						id: 'create-experience',
+						name: 'Create Experience',
+					},
+					{
+						id: 'video-summary-ui',
+						name: 'Video Summary UI',
+						href: '#'
+					}
+				]
+			}, {
+				id: 'item-1',
+				icon: 'folder-open',
+				parent: null,
+				name: 'Item #1',
+				beta: false,
+				sections: [
+					{
+						id: 'create-experience',
+						name: 'Create Experience',
+					},
+					{
+						id: 'video-summary-ui',
+						name: 'Video Summary UI',
+						href: '#'
+					}
+				]
+			}, {
+				id: 'item-2',
+				icon: 'folder-open',
+				parent: null,
+				name: 'Item #2',
 				beta: false,
 				sections: [
 					{

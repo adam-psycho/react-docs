@@ -1,0 +1,41 @@
+nav {
+    padding: 0px 20px;
+    background-color: white;
+    a {
+        display: inline-block;
+        margin: 0 20px 0 0;
+        text-decoration: none;
+        color: #262626;
+        padding: 10px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        position: relative;
+        font-size: 11pt;
+        &:after {
+            background: #b3b3b3;
+            bottom: 0;
+            content: "";
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            -webkit-transition: none;
+            transition: none;
+            width: 0;
+        }
+        &:active {
+            background-color: #ccc;
+            &:after {
+                background-color: #262626;
+            }
+        }
+        &:hover {
+            // background-color: #ccc;
+            &:after {
+                left: 0;
+                -webkit-transition: all .2s;
+                transition: all .2s;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,20 +1,26 @@
 import React, { Component } from "react";
 import m from './models/ApiModules.js';
+import Header from './components/header/Header.js';
+import Footer from './components/footer/Footer.js';
+import Subnav from './components/subnav/Subnav.js';
 import './App.scss';
 
+
+const SUBTITLE_MAPPING = {
+  'symbl-sdk': 'Send and Recieve',
+  'telephony': 'Programmable',
+  'web-socket': 'Programmable',
+  'async': 'User Authentication',
+  'conversation': 'Number Insight',
+  'experience': 'Programmable Conversations',
+  'item-1': 'Subtitle',
+  'item-2': 'Subtitle',
+}
 
 class App extends Component {
 
   constructor() {
     super();
-    this.subtitleMapping = {
-      'symbl-sdk': 'Send and Recieve',
-      'telephony': 'Programmable',
-      'web-socket': 'Programmable',
-      'async': 'User Authentication',
-      'conversation': 'Number Insight',
-      'experience': 'Programmable Conversations',
-    }
     this.listItems = [
       'symbl-sdk',
       'telephony',
@@ -24,31 +30,34 @@ class App extends Component {
       'experience',
     ]
     this.cardItems = [
-      'testing',
-      'error',
+      {
+        icon: 'code',
+        title: 'Messages and Dispatch',
+        subtitle: 'Integrate with various communication channels including Facebook Messenger, WhatsApp and Viber with failover',
+        modules: ['item-1', 'item-2']
+      },
     ]
     
   }
 
-  listItem() {
-    let listItems = m.modules.filter(x => this.listItems.indexOf(x.id) !== -1);
+  listItem(listItems) {
     let items = [];
     for (let item of listItems) {
       items.push(
-        <li class="list-item">
+        <li className="list-item">
           <div>
-            <div class="list-content">
-              <span>Icon</span>
-              <span class="subtitle">{this.subtitleMapping[item.id]}</span>
-              <h3 class="title">{item.name}</h3>
-              <div class="sub-sections">
-                <a href="#">Overview</a>
-                <a href="#">Guides</a>
-                <a href="#">Code Snippets</a>
-                <a href="#">Tutorials</a>
+            <div className="list-content">
+              <i className={"fa fa-" + item.icon}></i>
+              <span className="list-subtitle">{SUBTITLE_MAPPING[item.id]}</span>
+              <h3 className="list-title">{item.name}</h3>
+              <div className="sub-sections flex-row">
+                <a href="#"><i className="fa fa-home"></i>Overview</a>
+                <a href="#"><i className="fa fa-book"></i>Guides</a>
+                <a href="#"><i className="fa fa-code"></i>Code Snippets</a>
+                <a href="#"><i className="fa fa-info"></i>Tutorials</a>
               </div>
               <hr />
-              <div class="list-footer">
+              <div className="list-footer flex-row">
                 <a href="#">API Reference</a>
                 <a href="#">Another Reference</a>
               </div>
@@ -57,17 +66,44 @@ class App extends Component {
         </li>
       )
     }
-    return <ul class="list-items">
+    return <ul className="flex-row list-items">
       {items}
     </ul>
   }
 
-   render() {
-    return (
-      <div class="container">
-        <div class="content">
-          {this.listItem()}
+  cardSection() {
+    let items = [];
+    for (let cardItem of this.cardItems) {
+      let modules = m.modules.filter(x => cardItem.modules.indexOf(x.id) !== -1);
+      items.push(
+        <div className="card-section">
+          <i className={"fa fa-" + cardItem.icon}></i>
+          <h3 className="page-subtitle">{cardItem.title}</h3>
+          <p className="page-subtext">{cardItem.subtitle}</p>
+          {this.listItem(modules)}
         </div>
+      )
+    }
+    return items;
+  }
+
+   render() {
+    let modules = m.modules.filter(x => this.listItems.indexOf(x.id) !== -1);
+    return (
+      <div>
+        <div id="fixed-header">
+          <Header />
+          <Subnav />
+        </div>
+        <div className="container">
+          <div className="content">
+            <h1 className="page-title">Symbl API Developer</h1>
+            <p className="page-subtext">Everything you need to build connected appliactions with Vonage APIs</p>
+            {this.listItem(modules)}
+            {this.cardSection()}
+          </div>
+        </div>
+        <Footer />
       </div>
     )
    } 
