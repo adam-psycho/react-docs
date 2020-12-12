@@ -48,7 +48,9 @@ class Subnav extends Component {
 		}
 		return (
 			<nav className="flex-row">
-				{items}
+				<div>
+					{items}
+				</div>
 			</nav>
 		)
 	}

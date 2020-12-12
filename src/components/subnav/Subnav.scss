@@ -1,6 +1,11 @@
 nav {
     padding: 0px 20px;
     background-color: white;
+    > div {
+        max-width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+    }
     a {
         display: inline-block;
         margin: 0 20px 0 0;
