@@ -4,6 +4,12 @@ import Header from '../header/Header.js';
 import Footer from '../footer/Footer.js';
 import Subnav from '../subnav/Subnav.js';
 import './Home.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
 
 
 const SUBTITLE_MAPPING = {
@@ -51,15 +57,15 @@ class Home extends Component {
               <span className="list-subtitle">{SUBTITLE_MAPPING[item.id]}</span>
               <h3 className="list-title">{item.name}</h3>
               <div className="sub-sections flex-row">
-                <a href="#"><i className="fa fa-home"></i>Overview</a>
-                <a href="#"><i className="fa fa-book"></i>Guides</a>
-                <a href="#"><i className="fa fa-code"></i>Code Snippets</a>
-                <a href="#"><i className="fa fa-info"></i>Tutorials</a>
+                <a href="/docpage"><i className="fa fa-home"></i>Overview</a>
+                <a href="/docpage"><i className="fa fa-book"></i>Guides</a>
+                <a href="/docpage"><i className="fa fa-code"></i>Code Snippets</a>
+                <a href="/docpage"><i className="fa fa-info"></i>Tutorials</a>
               </div>
               <hr />
               <div className="list-footer flex-row">
-                <a href="#">API Reference</a>
-                <a href="#">Another Reference</a>
+                <a href="/docpage">API Reference</a>
+                <a href="/docpage">Another Reference</a>
               </div>
             </div>
           </div>

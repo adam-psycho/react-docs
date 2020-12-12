@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Home from './components/home/Home.js';
+import DocPage from './components/docpage/DocPage.js';
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -11,8 +12,12 @@ import {
 
 const ROUTES = [
   {
-    href: '/',
+    href: '/home',
     component: Home,
+  },
+  {
+    href: '/docpage',
+    component: DocPage,
   }
 ]
 
