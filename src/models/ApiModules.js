@@ -1,3 +1,4 @@
+import InitializeTheSdk from '../components/Sections/SymblSDK/InitializeTheSdk.js';
 // Modules:
 //  id: string
 //  parent: Module or null
@@ -22,14 +23,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'initialize-the-sdk',
 						name: 'Initialize the SDK',
-						href: '#',
+						component: InitializeTheSdk,
 					},
 					{
 						id: 'connect-to-endpoints',
 						name: 'Connect to Endpoints',
-						href: '#',
+						component: InitializeTheSdk,
 					}
 				]
 			}, {
@@ -40,14 +61,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'telephony',
 						name: 'Telephony',
-						href: '#',
+						component: InitializeTheSdk,
 					},
 					{
 						id: 'langage-timezone',
 						name: 'Specifying Langage and Timezone',
-						href: '#'
+						component: InitializeTheSdk,
 					}
 				]
 			}, {
@@ -58,14 +99,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'message-formats',
 						name: 'Message Formats',
-						href: '#'
+						component: InitializeTheSdk
 					},
 					{
 						id: 'configuration',
-						name: 'configuration',
-						href: '#'
+						name: 'Configuration',
+						component: InitializeTheSdk
 					}
 				]
 			}, {
@@ -76,14 +137,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'text-api',
 						name: 'Text API',
-						href: '#'
+						component: InitializeTheSdk
 					},
 					{
 						id: 'audio-api',
 						name: 'Audio API',
-						href: '#'
+						component: InitializeTheSdk
 					}
 				]
 			}, {
@@ -94,14 +175,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'get-conversion',
 						name: 'GET conversation',
-						href: '#'
+						component: InitializeTheSdk
 					},
 					{
 						id: 'delete-conversation',
 						name: 'DELETE conversation',
-						href: '#'
+						component: InitializeTheSdk
 					}
 				]
 			}, {
@@ -112,13 +213,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'create-experience',
 						name: 'Create Experience',
+						component: InitializeTheSdk
 					},
 					{
 						id: 'video-summary-ui',
 						name: 'Video Summary UI',
-						href: '#'
+						component: InitializeTheSdk
 					}
 				]
 			}, {
@@ -129,13 +251,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'create-experience',
 						name: 'Create Experience',
+						component: InitializeTheSdk
 					},
 					{
 						id: 'video-summary-ui',
 						name: 'Video Summary UI',
-						href: '#'
+						component: InitializeTheSdk
 					}
 				]
 			}, {
@@ -146,13 +289,34 @@ let m ={
 				beta: false,
 				sections: [
 					{
+						id: 'overview',
+						name: 'Overview',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'guides',
+						name: 'Guides',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'code-snippets',
+						name: 'Code Snippets',
+						component: InitializeTheSdk,
+					},
+					{
+						id: 'tutorials',
+						name: 'Tutorials',
+						component: InitializeTheSdk,
+					},
+					{
 						id: 'create-experience',
 						name: 'Create Experience',
+						component: InitializeTheSdk
 					},
 					{
 						id: 'video-summary-ui',
 						name: 'Video Summary UI',
-						href: '#'
+						component: InitializeTheSdk
 					}
 				]
 			}

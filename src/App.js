@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import Home from './components/home/Home.js';
-import DocPage from './components/docpage/DocPage.js';
+import Home from './components/Home/Home.js';
+import DocPage from './components/DocPage/DocPage.js';
 import './App.scss';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
+  Redirect,
 } from "react-router-dom";
 
 
@@ -16,7 +17,7 @@ const ROUTES = [
     component: Home,
   },
   {
-    href: '/docpage',
+    href: '/docpage/:module/:section',
     component: DocPage,
   }
 ]
@@ -32,6 +33,7 @@ class App extends Component {
       <Router>
         <Switch>
           {routers}
+           <Redirect from="*" to="/home" />
         </Switch>
       </Router>
     )

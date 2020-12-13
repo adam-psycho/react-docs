@@ -4,6 +4,10 @@ import './Subnav.scss';
 
 const navItems = [
 	{
+		text: 'Home',
+		href: '/home'
+	},
+	{
 		text: 'Documentation',
 		href: '#',
 	},
@@ -31,10 +35,6 @@ const navItems = [
 		text: 'Voyagers',
 		href: '#',
 	},
-	{
-		text: 'Vonage Dev TV',
-		href: '#',
-	}
 ]
 
 class Subnav extends Component {

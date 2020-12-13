@@ -16,10 +16,15 @@ h1, h2, h3, h4, h5, h6, p, span, label, input li {
 }
 
 $containerWidth: 1300px;
+$headerOffset: 150px;
 
 .container {
 	max-width: $containerWidth;
-	margin: 150px auto;
+	margin: $headerOffset auto;
+}
+
+.wide-container {
+	margin: $headerOffset auto;
 }
 
 .flex-row {
