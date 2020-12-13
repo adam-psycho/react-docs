@@ -4,11 +4,16 @@
     top: 20px;
     left: 20px;
     font-size: 20pt;
+    @media(min-width: 721px) {
+        display: none;
+    }
 }
 
 
 #fixed-header {
-    padding-left: 40px;
+    @media(max-width: 720px) {
+        padding-left: 40px;
+    }
 }
 
 .sidenav {
