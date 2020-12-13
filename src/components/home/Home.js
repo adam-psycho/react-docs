@@ -4,12 +4,6 @@ import Header from '../Header/Header.js';
 import Footer from '../Footer/Footer.js';
 import Subnav from '../Subnav/Subnav.js';
 import './Home.scss';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
 
 
 const SUBTITLE_MAPPING = {

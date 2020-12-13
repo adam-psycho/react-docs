@@ -1,4 +1,11 @@
 import InitializeTheSdk from '../components/Sections/SymblSDK/InitializeTheSdk.js';
+import ConnectToEndpoints from '../components/Sections/SymblSDK/ConnectToEndpoints.js';
+import SymblSDKOverview from '../components/Sections/SymblSDK/SymblSDKOverview.js';
+import SymblSDKGuides from '../components/Sections/SymblSDK/SymblSDKGuides.js';
+import SymblSDKSnippets from '../components/Sections/SymblSDK/SymblSDKSnippets.js';
+import SymblSDKTutorials from '../components/Sections/SymblSDK/SymblSDKTutorials.js';
+
+
 // Modules:
 //  id: string
 //  parent: Module or null
@@ -25,22 +32,22 @@ let m ={
 					{
 						id: 'overview',
 						name: 'Overview',
-						component: InitializeTheSdk,
+						component: SymblSDKOverview,
 					},
 					{
 						id: 'guides',
 						name: 'Guides',
-						component: InitializeTheSdk,
+						component: SymblSDKGuides,
 					},
 					{
 						id: 'code-snippets',
 						name: 'Code Snippets',
-						component: InitializeTheSdk,
+						component: SymblSDKSnippets,
 					},
 					{
 						id: 'tutorials',
 						name: 'Tutorials',
-						component: InitializeTheSdk,
+						component: SymblSDKTutorials,
 					},
 					{
 						id: 'initialize-the-sdk',
@@ -50,7 +57,7 @@ let m ={
 					{
 						id: 'connect-to-endpoints',
 						name: 'Connect to Endpoints',
-						component: InitializeTheSdk,
+						component: ConnectToEndpoints,
 					}
 				]
 			}, {

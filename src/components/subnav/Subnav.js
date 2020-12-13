@@ -41,10 +41,12 @@ class Subnav extends Component {
 
 	render() {
 		let items = [];
+		let i = 0;
 		for (let navItem of navItems) {
 			items.push(
-				<a href={navItem.href}>{navItem.text}</a>
+				<a key={i} href={navItem.href}>{navItem.text}</a>
 			)
+			++i;
 		}
 		return (
 			<nav className="flex-row">

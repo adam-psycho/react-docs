@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect,
 } from "react-router-dom";
 
@@ -26,8 +25,10 @@ class App extends Component {
 
   render() {
     let routers = [];
+    let i = 0;
     for (let route of ROUTES) {
-      routers.push(<Route path={route.href} component={route.component} />);
+      routers.push(<Route key={i} path={route.href} component={route.component} />);
+      ++i;
     }
     return (
       <Router>

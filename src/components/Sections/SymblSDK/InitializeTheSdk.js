@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import m from '../../../models/ApiModules.js';
 
 
 class InitializeTheSdk extends Component {
@@ -9,7 +8,7 @@ class InitializeTheSdk extends Component {
     return (
       <div>
         <h1>Initalize the SDK</h1>
-        <p>This dynamically loads the InititializeTheSDK Component</p>
+        <p>This dynamically loads the InitializeTheSDK Component</p>
       </div>
     )
    } 

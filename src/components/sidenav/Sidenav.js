@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef, useEffect } from "react";
+import React, { Component } from "react";
 import m from '../../models/ApiModules.js';
 import './Sidenav.scss';
 import {
@@ -47,15 +47,17 @@ class Sidenav extends Component {
     let i = 0;
     for (let module of m.modules) {
       let sections = [];
+      let j = 0;
       for (let section of module.sections) {
         sections.push(
-          <li className="section">
+          <li className="section" key={j}>
             <NavLink activeClassName='active' to={`/docpage/${module.id}/${section.id}`}><span>{section.name}</span></NavLink>
           </li>
         )
+        j++;
       }
       modules.push(
-        <li className={`module`} onClick={(e) => {this.toggleAccordion(e)}}>
+        <li className={`module`} onClick={(e) => {this.toggleAccordion(e)}} key={i}>
           <div className="module-name-wrapper" id={'module-' + i}>
             <span><i className={'fa fa-' + module.icon}></i>{module.name}<i className="trigger fa fa-angle-down" aria-hidden="true"></i></span>
           </div>

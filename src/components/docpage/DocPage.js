@@ -5,9 +5,7 @@ import Sidenav from '../Sidenav/Sidenav.js';
 import Subnav from '../Subnav/Subnav.js';
 import Header from '../Header/Header.js';
 import Footer from '../Footer/Footer.js';
-import {
-  useParams, withRouter,
-} from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 
 class DocPage extends Component {
