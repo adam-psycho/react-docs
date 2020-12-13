@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import m from '../../models/ApiModules.js';
+import ApiModules from '../../models/ApiModules.js';
 import './Sidenav.scss';
 import {
   NavLink
@@ -45,7 +45,7 @@ class Sidenav extends Component {
   createList()  {
     let modules = [];
     let i = 0;
-    for (let module of m.modules) {
+    for (let module of ApiModules.modules) {
       let sections = [];
       let j = 0;
       for (let section of module.sections) {
@@ -71,13 +71,13 @@ class Sidenav extends Component {
     return modules;
   }
   render() {
-  	return (
-  		<div className="sidenav">
-  			<ul className="modules">
-  				{this.createList()}
-  			</ul>
-  		</div>
-  	)
+    return (
+      <div className="sidenav">
+        <ul className="modules">
+          {this.createList()}
+        </ul>
+      </div>
+    )
   }
 }
 

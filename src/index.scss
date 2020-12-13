@@ -12,50 +12,50 @@ body {
 $defaultFont: 'Lato', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 h1, h2, h3, h4, h5, h6, p, span, label, input li {
-	font-family: $defaultFont;
+    font-family: $defaultFont;
 }
 
 $containerWidth: 1300px;
 $headerOffset: 150px;
 
 .container {
-	max-width: $containerWidth;
-	margin: $headerOffset auto;
+    max-width: $containerWidth;
+    margin: $headerOffset auto;
 }
 
 .wide-container {
-	margin: $headerOffset auto;
+    margin: $headerOffset auto;
 }
 
 .flex-row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .page-title, .page-text, .page-subtitle, .page-subtext {
-	text-align: center;
-	font-weight: normal;
+    text-align: center;
+    font-weight: normal;
 }
 
 .page-title {
-	font-size: 30pt;
+    font-size: 30pt;
 }
 
 .page-subtitle {
-	font-size: 24pt;
+    font-size: 24pt;
 }
 
 .page-text {
-	font-size: 12pt;
+    font-size: 12pt;
 }
 
 .page-subtext {
-	font-size: 12pt;
+    font-size: 12pt;
 }
 
 hr {
-	border-bottom: 0;
+    border-bottom: 0;
     border-top: 1px solid #b3b3b3;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -66,12 +66,12 @@ hr {
 
 
 .fa {
-	color: #9941ff;
+    color: #9941ff;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #fixed-header {

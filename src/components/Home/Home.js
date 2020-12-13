@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import m from '../../models/ApiModules.js';
+import ApiModules from '../../models/ApiModules.js';
 import Header from '../Header/Header.js';
 import Footer from '../Footer/Footer.js';
 import Subnav from '../Subnav/Subnav.js';
@@ -74,7 +74,7 @@ class Home extends Component {
   cardSection() {
     let items = [];
     for (let cardItem of this.cardItems) {
-      let modules = m.modules.filter(x => cardItem.modules.indexOf(x.id) !== -1);
+      let modules = ApiModules.modules.filter(x => cardItem.modules.indexOf(x.id) !== -1);
       items.push(
         <div className="card-section">
           <i className={"fa fa-" + cardItem.icon}></i>
@@ -88,7 +88,7 @@ class Home extends Component {
   }
 
    render() {
-    let modules = m.modules.filter(x => this.listItems.indexOf(x.id) !== -1);
+    let modules = ApiModules.modules.filter(x => this.listItems.indexOf(x.id) !== -1);
     return (
       <div>
         <div id="fixed-header">

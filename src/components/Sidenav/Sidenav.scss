@@ -1,51 +1,51 @@
 
 .sidenav {
-	background-color: #f2f2f2;
-	width: 250px;
-	height: calc(100vh - 180px);
-	max-height: calc(100vh - 180px);
-	overflow: auto;
-	li {
-		list-style-type: none;
-	}
-	.modules {
-		.module-name-wrapper {
-			padding: 10px;
-			cursor: pointer;
-			&.active, &:hover {
-				background-color:#ccc;
-			}
-		}
-		> li {
-			// padding: 10px;
-			font-size: 11pt;
-			i {
-				color: #262626;
-				width: 20px;
-			}
-			.fa-angle-down, .fa-angle-up {
-				float: right;
-			}
-			ul {
-				// background-color: white;
-			    overflow: hidden;
-			    transition: max-height 0.3s ease;
-			    max-height: 0px;
-			    > li {
-			    	font-size: 11pt;
-			    	a {
-			    		display: block;
-			    		padding: 10px 30px;
-			    		color: inherit;
-			    		text-decoration: none;
-			    		&.active {
-			    			background-color:  lightgray;// #e6e6e6
-			    		}
-			    	}
-			    }
-			}
-		}
-	}
+    background-color: #f2f2f2;
+    width: 250px;
+    height: calc(100vh - 180px);
+    max-height: calc(100vh - 180px);
+    overflow: auto;
+    li {
+        list-style-type: none;
+    }
+    .modules {
+        .module-name-wrapper {
+            padding: 10px;
+            cursor: pointer;
+            &.active, &:hover {
+                background-color:#ccc;
+            }
+        }
+        > li {
+            // padding: 10px;
+            font-size: 11pt;
+            i {
+                color: #262626;
+                width: 20px;
+            }
+            .fa-angle-down, .fa-angle-up {
+                float: right;
+            }
+            ul {
+                // background-color: white;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                max-height: 0px;
+                > li {
+                    font-size: 11pt;
+                    a {
+                        display: block;
+                        padding: 10px 30px;
+                        color: inherit;
+                        text-decoration: none;
+                        &.active {
+                            background-color:  lightgray;// #e6e6e6
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // .panel {
