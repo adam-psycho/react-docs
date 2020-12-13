@@ -17,6 +17,7 @@
     height: calc(100vh - 180px);
     max-height: calc(100vh - 180px);
     overflow: auto;
+    position: static;
     @media(max-width: 720px) {
         transition: left 0.3s ease;
         left: -250px;
