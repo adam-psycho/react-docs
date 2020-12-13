@@ -1,10 +1,27 @@
 
+.fa-bars {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20pt;
+}
+
+
+#fixed-header {
+    padding-left: 40px;
+}
+
 .sidenav {
     background-color: #f2f2f2;
     width: 250px;
     height: calc(100vh - 180px);
     max-height: calc(100vh - 180px);
     overflow: auto;
+    @media(max-width: 720px) {
+        transition: left 0.3s ease;
+        left: -250px;
+        position: absolute;
+    }
     li {
         list-style-type: none;
     }

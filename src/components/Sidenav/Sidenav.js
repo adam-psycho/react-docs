@@ -8,6 +8,13 @@ import {
 
 class Sidenav extends Component {
 
+  constructor(props) {
+    super();
+    this.state = {
+      opened: false,
+    }
+  }
+
   componentDidMount() {
     let activeLink = document.querySelector("a.active");
     if (activeLink) {
@@ -70,12 +77,33 @@ class Sidenav extends Component {
     }
     return modules;
   }
+
+  toggleSidenav(e, state) {
+    let sidenav = document.querySelector('.sidenav');
+    if (sidenav) {
+      if (state.opened) {
+        sidenav.style.left = `-${sidenav.clientWidth}px`;
+      } else {
+        sidenav.style.left = '0px';
+      }
+    }
+    console.log(state);
+    this.setState({opened: !state.opened});
+    // this.setState((state) => {
+    //   return {opened: !state.opened}
+    // });
+  }
+
+
   render() {
     return (
+      <div>
+      <i className="fa fa-bars" aria-hidden="true" onClick={(e) => {this.toggleSidenav(e, this.state)}}></i>
       <div className="sidenav">
         <ul className="modules">
           {this.createList()}
         </ul>
+      </div>
       </div>
     )
   }
