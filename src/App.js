@@ -10,20 +10,20 @@ import {
 } from "react-router-dom";
 
 
-const ROUTES = [
-  {
-    href: '/home',
-    component: Home,
-  },
-  {
-    href: '/docpage/:module/:section',
-    component: DocPage,
-  }
-]
 
 class App extends Component {
 
   render() {
+    const ROUTES = [
+      {
+        href: '/home',
+        component: Home,
+      },
+      {
+        href: '/docpage/:module/:section',
+        component: DocPage,
+      }
+    ]
     let routers = [];
     let i = 0;
     for (let route of ROUTES) {
