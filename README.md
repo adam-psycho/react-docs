@@ -1,6 +1,4 @@
-# Welcome to StackEdit!
-
-## React Project
+# React Project
 
 The core of this application is the file in `models/ApiModules.js`. This file contains a JSON object with the documentation structure. The home page, the sidebar and the actual documentation components is all loaded through this object. This makes it easy to add and modify documentation sections. 
 
