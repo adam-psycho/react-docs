@@ -23,7 +23,8 @@
     "webpack-cli": "^4.2.0"
   },
   "scripts": {
-    "start": "webpack serve --mode development --open --hot --port 3000",
+    "start": "node server/server.js",
+    "heroku-postbuild": "webpack -p",
     "build": "webpack --mode production"
   },
   "keywords": [],
