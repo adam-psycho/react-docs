@@ -1,9 +1,9 @@
-import InitializeTheSdk from '../components/Sections/SymblSDK/InitializeTheSdk.js';
-import ConnectToEndpoints from '../components/Sections/SymblSDK/ConnectToEndpoints.js';
-import SymblSDKOverview from '../components/Sections/SymblSDK/SymblSDKOverview.js';
-import SymblSDKGuides from '../components/Sections/SymblSDK/SymblSDKGuides.js';
-import SymblSDKSnippets from '../components/Sections/SymblSDK/SymblSDKSnippets.js';
-import SymblSDKTutorials from '../components/Sections/SymblSDK/SymblSDKTutorials.js';
+import InitializeTheSdk from '../components/Sections/SymblSDK/InitializeTheSdk';
+import ConnectToEndpoints from '../components/Sections/SymblSDK/ConnectToEndpoints';
+import SymblSDKOverview from '../components/Sections/SymblSDK/SymblSDKOverview';
+import SymblSDKGuides from '../components/Sections/SymblSDK/SymblSDKGuides';
+import SymblSDKSnippets from '../components/Sections/SymblSDK/SymblSDKSnippets';
+import SymblSDKTutorials from '../components/Sections/SymblSDK/SymblSDKTutorials';
 
 
 // Modules:

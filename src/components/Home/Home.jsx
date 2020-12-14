@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ApiModules from '../../models/ApiModules.js';
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
-import Subnav from '../Subnav/Subnav.js';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Subnav from '../Subnav/Subnav';
 import './Home.scss';
 
 
@@ -42,9 +42,10 @@ class Home extends Component {
 
   listItem(listItems) {
     let items = [];
+    let i = 0;
     for (let item of listItems) {
       items.push(
-        <li className="list-item">
+        <li className="list-item" key={i}>
           <div>
             <div className="list-content">
               <i className={"fa fa-" + item.icon}></i>
@@ -65,6 +66,7 @@ class Home extends Component {
           </div>
         </li>
       )
+      ++i;
     }
     return <ul className="flex-row list-items">
       {items}
@@ -73,16 +75,18 @@ class Home extends Component {
 
   cardSection() {
     let items = [];
+    let i = 0;
     for (let cardItem of this.cardItems) {
       let modules = ApiModules.modules.filter(x => cardItem.modules.indexOf(x.id) !== -1);
       items.push(
-        <div className="card-section">
+        <div className="card-section" key={i}>
           <i className={"fa fa-" + cardItem.icon}></i>
           <h3 className="page-subtitle">{cardItem.title}</h3>
           <p className="page-subtext">{cardItem.subtitle}</p>
           {this.listItem(modules)}
         </div>
       )
+      ++i;
     }
     return items;
   }

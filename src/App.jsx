@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Home from './components/Home/Home.js';
-import DocPage from './components/DocPage/DocPage.js';
+import Home from './components/Home/Home';
+import DocPage from './components/DocPage/DocPage';
 import './App.scss';
 import {
   BrowserRouter as Router,

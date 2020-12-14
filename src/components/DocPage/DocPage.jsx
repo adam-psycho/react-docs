@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import ApiModules from '../../models/ApiModules.js';
 import './DocPage.scss';
-import Sidenav from '../Sidenav/Sidenav.js';
-import Subnav from '../Subnav/Subnav.js';
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
+import Sidenav from '../Sidenav/Sidenav';
+import Subnav from '../Subnav/Subnav';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import { withRouter } from "react-router-dom";
 
 
